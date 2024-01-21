@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css.css">
+    <title>Houssem KOUBAA</title>
+</head>
+
+<body>
+    <nav>
+        <div class="heading">Houssem KOUBAA</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="../pageAccueil.html">Page Accueill</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="line">
+        <h3>2023/24</h3>
+        <h3>International Institut of Technology
+            Engineering Degree (1st year)</h3>
+        <button disabled>Etudiant</button>
+    </section>
+
+    <section class="line">
+        <h3>2022/23</h3>
+        <h3>Higher Institut of Computer Science and Multimidia of Sfax
+            Licence Degree in Big Data and Data Analysis Branch<br>
+            (Grade: highest honors)
+        </h3>
+        <button onclick="getDiploma()">cliquer pour afficher le diplome obtenus</button>
+    </section>
+    <section style="display: none;margin-left:500px; " id="isimsdiplome">
+        <img src="../licence.jpg" alt="diplome" style="width: 50%;height: 50%; " />
+    </section>
+    <section class="line">
+        <h3>2019/20</h3>
+        <h3>Ibn Rachik high school, Sfax, Tunisia
+            Baccalaureate Degree in Technical Science Branch<br>
+            (Grade: 12.5/20) </h3>
+        <button onclick="getbaccalaureate()">cliquer pour afficher le diplome obtenus</button>
+    </section>
+    <section style="display: none; margin-left:500px;" id="baccalaureate">
+        <img src="../bac.jpg" alt="diplome" style="width: 50%;height: 50%;" />
+    </section>
+    <script src="../js.js"></script>
+</body>
+
+</html>

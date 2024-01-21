@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css.css">
+    <title>Houssem KOUBAA</title>
+</head>
+
+<body>
+    <nav>
+        <div class="heading">Houssem KOUBAA</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="../pageAccueil.html">Page Accueill</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="line">
+        <form id="quizzForm" onsubmit="checkAnswers(); return false;"
+            style="font-size: large; word-spacing: 20px; font-style: italic; font-family: 'Times New Roman', Times, serif;">
+            <ol>
+                <li>
+                    <p>Quel langage de programmation est connu comme le langage du web?</p>
+                    <label><input type="radio" name="q1" value="a"> Java</label>
+                    <label><input type="radio" name="q1" value="b"> Python</label>
+                    <label><input type="radio" name="q1" value="c"> JavaScript</label>
+                    <label><input type="radio" name="q1" value="d"> C++</label>
+                </li>
+                <!-- Ajoutez d'autres questions similaires -->
+
+                <!-- Exemple d'une autre question -->
+                <li>
+                    <p>Quel langage de programmation est utilisé pour le développement d'applications mobiles sur iOS?
+                    </p>
+                    <label><input type="radio" name="q2" value="a"> Swift</label>
+                    <label><input type="radio" name="q2" value="b"> Kotlin</label>
+                    <label><input type="radio" name="q2" value="c"> Objective-C</label>
+                    <label><input type="radio" name="q2" value="d"> Java</label>
+                </li>
+                --------------------------------------------------------------
+                <li>
+                    <p>Quelle équipe a remporté la Coupe du Monde de la FIFA en 2018?</p>
+                    <label><input type="radio" name="q3" value="a"> Brésil</label>
+                    <label><input type="radio" name="q3" value="b"> France</label>
+                    <label><input type="radio" name="q3" value="c"> Allemagne</label>
+                    <label><input type="radio" name="q3" value="d"> Espagne</label>
+                </li>
+
+                <li>
+                    <p>Quel joueur est souvent surnommé "La Pulga"?</p>
+                    <label><input type="radio" name="q4" value="a"> Cristiano Ronaldo</label>
+                    <label><input type="radio" name="q4" value="b"> Lionel Messi</label>
+                    <label><input type="radio" name="q4" value="c"> Neymar</label>
+                    <label><input type="radio" name="q4" value="d"> Andres Iniesta</label>
+                </li>
+
+                <li>
+                    <p>Quel pays a accueilli la Coupe du Monde de la FIFA en 2014?</p>
+                    <label><input type="radio" name="q5" value="a"> France</label>
+                    <label><input type="radio" name="q5" value="b"> Brésil</label>
+                    <label><input type="radio" name="q5" value="c"> Allemagne</label>
+                    <label><input type="radio" name="q5" value="d"> Afrique du Sud</label>
+                </li>
+                --------------------------------------------------------------
+                <li>
+                    <p>Qui est l'auteur du tableau "La Joconde"?</p>
+                    <label><input type="radio" name="q6" value="a"> Vincent van Gogh</label>
+                    <label><input type="radio" name="q6" value="b"> Pablo Picasso</label>
+                    <label><input type="radio" name="q6" value="c"> Claude Monet</label>
+                    <label><input type="radio" name="q6" value="d"> Leonardo da Vinci</label>
+                </li>
+
+                <li>
+                    <p>Quel mouvement artistique est associé à Salvador Dalí et René Magritte?</p>
+                    <label><input type="radio" name="q7" value="a"> Cubisme</label>
+                    <label><input type="radio" name="q7" value="b"> Surréalisme</label>
+                    <label><input type="radio" name="q7" value="c"> Impressionnisme</label>
+                    <label><input type="radio" name="q7" value="d"> Art abstrait</label>
+                </li>
+
+                <li>
+                    <p>Quelle sculpture de Michel-Ange se trouve à la Cité du Vatican?</p>
+                    <label><input type="radio" name="q8" value="a"> La Vénus de Milo</label>
+                    <label><input type="radio" name="q8" value="b"> Le David</label>
+                    <label><input type="radio" name="q8" value="c"> La Pieta</label>
+                    <label><input type="radio" name="q8" value="d"> Le Penseur</label>
+                </li>
+                --------------------------------------------------------------
+
+                <li>
+                    <p>Quelle bataille a marqué la fin des guerres napoléoniennes en Europe?</p>
+                    <label><input type="radio" name="q9" value="a"> Bataille d'Austerlitz</label>
+                    <label><input type="radio" name="q9" value="b"> Bataille de Leipzig</label>
+                    <label><input type="radio" name="q9" value="c"> Bataille de Waterloo</label>
+                    <label><input type="radio" name="q9" value="d"> Bataille de Jena-Auerstedt</label>
+                </li>
+
+                <li>
+                    <p>Quel événement a marqué le début de la Première Guerre mondiale en 1914?</p>
+                    <label><input type="radio" name="q10" value="a"> L'assassinat de l'archiduc
+                        François-Ferdinand</label>
+                    <label><input type="radio" name="q10" value="b"> La bataille de la Marne</label>
+                    <label><input type="radio" name="q10" value="c"> Le traité de Versailles</label>
+                    <label><input type="radio" name="q10" value="d"> L'attaque de Pearl Harbor</label>
+                </li>
+
+                <li>
+                    <p>Quel empereur romain a été assassiné le 15 mars 44 av. J.-C.?</p>
+                    <label><input type="radio" name="q11" value="a"> Jules César</label>
+                    <label><input type="radio" name="q11" value="b"> Auguste</label>
+                    <label><input type="radio" name="q11" value="c"> Néron</label>
+                    <label><input type="radio" name="q11" value="d"> Caligula</label>
+                </li>
+            </ol>
+
+            <button type="submit">Valider</button>
+        </form>
+    </section>
+    <script src="../js.js"></script>
+</body>
+
+</html>
