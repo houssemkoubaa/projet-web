@@ -55,10 +55,18 @@ function checkAnswers() {
       }
     }
   }
-  alert(
+  const displayedResults = document.getElementById("scoreDisplay");
+  displayedResults.style.display = "block";
+  const scoreDisplay = document.getElementById("scoreDisplay");
+  scoreDisplay.innerHTML =
     "Votre score est de " +
-      score +
-      " sur 11.\n\nRéponses correctes:\n" +
-      JSON.stringify(correctAnswers, null, 2)
-  );
+    score +
+    " sur 11.<br/><br/>Réponses correctes:<br/>" +
+    "1 = JavaScript | 2 = Swift  | 3 = France  | 4 = Lionel Messi| 5 = Brésil | 6 = Leonardo da Vinci | 7 = Surréalisme | 8 = La Pieta| 9 = Bataille de Waterloo| 10 =  L'assassinat de l'archiduc François-Ferdinand | 11 = Jules César ";
+}
+
+function EnvoyerMessage() {
+  var nom = getElementById("nom").value;
+  var comment = getElementById("comment").value;
+  alert("Message de: ", nom, ":", comment);
 }

@@ -19,35 +19,55 @@
             </ul>
         </div>
     </nav>
-    <section class="line">
-        <h3>2023/24</h3>
-        <h3>International Institut of Technology
-            Engineering Degree (1st year)</h3>
-        <button disabled>Etudiant</button>
-    </section>
+    <div
+        style="border-radius: 10px; box-shadow: 3px 3px rgb(245, 239, 239), -1em 0 .4em rgb(230, 230, 222); margin-top: 10px; margin-bottom: 10px; margin-left: 10px ; margin-right: 10px;">
 
-    <section class="line">
-        <h3>2022/23</h3>
-        <h3>Higher Institut of Computer Science and Multimidia of Sfax
-            Licence Degree in Big Data and Data Analysis Branch<br>
-            (Grade: highest honors)
-        </h3>
-        <button onclick="getDiploma()">cliquer pour afficher le diplome obtenus</button>
-    </section>
-    <section style="display: none;margin-left:500px; " id="isimsdiplome">
-        <img src="../licence.jpg" alt="diplome" style="width: 50%;height: 50%; " />
-    </section>
-    <section class="line">
-        <h3>2019/20</h3>
-        <h3>Ibn Rachik high school, Sfax, Tunisia
-            Baccalaureate Degree in Technical Science Branch<br>
-            (Grade: 12.5/20) </h3>
-        <button onclick="getbaccalaureate()">cliquer pour afficher le diplome obtenus</button>
-    </section>
-    <section style="display: none; margin-left:500px;" id="baccalaureate">
-        <img src="../bac.jpg" alt="diplome" style="width: 50%;height: 50%;" />
-    </section>
+        <section class="line">
+            <h3>2023/24</h3>
+            <h3>International Institut of Technology
+                Engineering Degree (1st year)</h3>
+            <button disabled style="margin-top: 20px;">Etudiant</button>
+        </section>
+        <hr>
+        <section class="line">
+            <h3>2022/23</h3>
+            <h3>Higher Institut of Computer Science and Multimidia of Sfax
+                Licence Degree in Big Data and Data Analysis Branch<br>
+                (Grade: highest honors)
+            </h3>
+            <button onclick="getDiploma()">cliquer pour afficher le diplome obtenus</button>
+        </section>
+        <section style="display: block;margin-left:500px; " id="isimsdiplome">
+            <img src="../licence.jpg" alt="diplome"
+                style="width: 50%;height: 50%; border-radius: 10px; box-shadow: 3px 3px rgb(245, 239, 239), -1em 0 .4em rgb(230, 230, 222) " />
+            <br>
+            <u>
+                <a href="../licence.jpg" download>Cliquer ici pour télécharger le diplome</a>
+            </u>
+        </section>
+
+
+        <hr>
+        <section class="line">
+            <h3>2019/20</h3>
+            <h3>Ibn Rachik high school, Sfax, Tunisia
+                Baccalaureate Degree in Technical Science Branch<br>
+                (Grade: 12.5/20) </h3>
+            <button onclick="getbaccalaureate()" style="margin-bottom: 20px;">cliquer pour afficher le diplome
+                obtenus</button>
+        </section>
+        <section style="display: block; margin-left:500px;" id="baccalaureate">
+            <img src="../bac.jpg" alt="diplome"
+                style="width: 50%;height: 50%; border-radius: 10px; box-shadow: 3px 3px rgb(245, 239, 239), -1em 0 .4em rgb(230, 230, 222)" />
+            <br>
+            <u>
+
+                <a href="../bac.jpg" download>Cliquer ici pour télécharger le diplome</a>
+            </u>
+        </section>
+    </div>
     <script src="../js.js"></script>
+
 </body>
 
 </html>

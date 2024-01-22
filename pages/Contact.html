@@ -21,34 +21,43 @@
     </nav>
     <section class="contact" id="contact">
         <div class="content">
-            <div class="title"><span>Envoyer moi un message</span></div>
             <div class="contactMenu">
-                <div class="input1">
-                    <div class="label1">Your Name</div>
-                    <div class="input2">
-                        <input type="text" placeholder="Enter your Name here">
+                <div class="input1"
+                    style="border-radius: 10px; box-shadow: 3px 3px rgb(245, 239, 239), -1em 0 .4em rgb(230, 230, 222)">
+                    <div style="margin-left: 10px; margin-right: 10px; margin-bottom: 10px;">
+                        <div class="label1">Nom</div>
+                        <div class="input2">
+                            <input type="text" placeholder="Entrer vos nom ici..." id="nom">
+                        </div>
+                        <div class="label1">
+                            <label>Email</label>
+                        </div>
+                        <div class="input2">
+                            <input type="text" placeholder="Entrer vos email ici..." id="email" </div>
+                            <div class="label1">
+                                <label>Message</label>
+                            </div>
+                            <div class="input2">
+                                <textarea id="comment" name="comment" rows="4" cols="50"
+                                    placeholder="Entrez votre commentaire ici..."></textarea>
+                            </div>
+                            <div class="button">
+                                <button onclick="EnvoyerMessage()">Envoyer</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="label1">
-                        <label>Your Email</label>
-                    </div>
-                    <div class="input2">
-                        <input type="text" placeholder="Enter your Email here">
-                    </div>
-                    <div class="label1">
-                        <label>Your Message</label>
-                    </div>
-                    <div class="input2">
-                        <textarea type="text">
-                    </div>
-                    <div class="button">
-                        <button>Sign Up</button>
-                    </div>
-                </div>
 
+                </div>
             </div>
-        </div>
     </section>
-    <script src="../js.js"></script>
+    <!-- <script src="../js.js"></script> -->
+    <script>
+        function EnvoyerMessage() {
+            var nom = document.getElementById("nom").value;
+            var comment = document.getElementById("comment").value;
+            alert("Message de " + nom + " : " + comment);
+        }
+    </script>
 </body>
 
 </html>
